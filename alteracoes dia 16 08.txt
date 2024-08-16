@@ -1,0 +1,20 @@
+Foi incluído as opções do menu desktop no dropdown do menu mobile
+
+Alteracao no arquivo home.php
+
+<div id="dropdow-menu" class="dropdown-menu">
+    <?php
+    echo '
+        <a style="color:#fff" id="historia" href="#" onclick="mostraSection(\'historiaClube\')">Historia</a>
+        <a style="color:#fff" id="titulos" href="#" onclick="mostraSection(\'titulosClube\')">Titulos</a>
+        <a style="color:#fff" id="curiosidades" href="#" onclick="mostraSection(\'curiosidadesClube\')">Curiosidades</a>
+        <a style="color:#fff" id="basquete" href="#" onclick="mostraSection(\'basqueteClube\')">Basquete</a>
+        <a style="color:#fff" href="?logout=true" id="logout-button">Sair</a>';
+    ?>
+</div>
+
+
+E inclusão no script na função mostrarSection()
+
+// Oculta o menu quando clica em uma opcao 
+dropdownMenu.style.display = 'none';
